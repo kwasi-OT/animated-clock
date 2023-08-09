@@ -16,7 +16,7 @@ const secondHand = document.querySelector("#seconds"),
         minuteHand.setAttribute('transform', `rotate(${minRotationAngle}, 244, 251)`);
         hourHand.setAttribute('transform', `rotate(${hourRotationAngle}, 244, 251)`);
 
-        let sound = new Audio("./media/tick.mp3");
+        let sound = new Audio("./src/media/tick.mp3");
         sound.play();
         setTimeout(updateClock, 1000); // update clock every second
     })();
